@@ -39,13 +39,13 @@ todo_app/
 ✅ API REST integrada (/todos)
 ✅ Código modular y mantenible
 
-## 🔧 Instalación
+## 🔧 Instalación del App
 
 ### Clona el repositorio:
 
 ```plaintext
-git clone https://github.com/tu-usuario/todo-app-flask.git
-cd todo-app-flask
+git clone https://github.com/tu-usuario/todo-app.git
+cd todo-app
 ```
 
 ### Instala las dependencias:
