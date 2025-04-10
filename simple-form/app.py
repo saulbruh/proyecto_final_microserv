@@ -2,6 +2,11 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
+@app.route("/", methods=["GET"])
+def index():
+    return render_template("index.html", data=None, message=None)
+
+
 @app.route("/login", methods=["POST"])
 def login():
     username = request.form["username"]
@@ -13,13 +18,16 @@ def login():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     error = None
+
     if request.method == "POST":
         username = request.form.get("username")
         if not username:
-            error = "El nombre de usuario es obligatorio."
+            error = "User name required."
         else:
-            return f"Usuario registrado: {username}"
-    return render_template("register.html", error=error)
+            message = f"User {username} registered!"
+            return render_template("home.html", message=message)
+        
+    return render_template("index.html", error=error)
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     app.run(debug=True)
