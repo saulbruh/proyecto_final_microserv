@@ -24,4 +24,4 @@ In an increasingly connected world, knowledge of server-side development and mic
 
 ## Conclusion
 
-This repository contains all the projects developed during the course, which serve as examples of the implementation of the discussed concepts. The ability to build scalable and secure applications is essential for any modern developer, and this course provides the necessary tools to address the current challenges in web development and microservices.
+This repository contains most of the projects developed during the course, which serve as examples of the implementation of the discussed concepts. The ability to build scalable and secure applications is essential for any modern developer, and this course provides the necessary tools to address the current challenges in web development and microservices.
