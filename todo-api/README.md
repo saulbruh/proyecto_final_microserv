@@ -2,7 +2,7 @@
 
 Una aplicación web moderna para gestionar tareas, construida con **Flask**, **Jinja2** y **Bootstrap 5**. Incluye una REST API integrada y una interfaz web responsiva para agregar, eliminar y ver tus tareas fácilmente.
 
-[TO DO List App](image.png)
+![TO DO List App](image.png)
 
 ---
 
