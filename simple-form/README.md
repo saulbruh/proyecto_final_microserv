@@ -1,8 +1,8 @@
-# 📝 TODO App
+# REGISTER App
 
-Una aplicación web para gestionar tareas, construida con **Flask**, **Jinja2** y **Bootstrap 5**. Incluye una REST API integrada y una interfaz web responsiva para agregar, eliminar y ver tus tareas fácilmente.
+Una aplicación web para gestionar tareas, construida con **Flask**, **Jinja2** y **Bootstrap 5**. Incluye una REST API integrada y una interfaz web responsiva que permite entrar y validar un registro de usuario.
 
-![TO DO List App](image.png)
+![Register Form](image1.png)
 
 ---
 
@@ -18,7 +18,7 @@ Una aplicación web para gestionar tareas, construida con **Flask**, **Jinja2** 
 ## 📁 Estructura del Proyecto
 
 ```plaintext
-todo-api/
+simple-form/
 │
 ├── static/
 │   └── css/
@@ -26,6 +26,7 @@ todo-api/
 │
 ├── templates/
 │   ├── base.html              # Layout principal
+│   ├── home.html              # Página para entradas válidas.
 │   └── index.html             # Página principal con formulario
 │
 ├── app.py                     # App principal con vistas y lógica de frontend
@@ -35,9 +36,9 @@ todo-api/
 ## ✨ Características
 
 ✅ Interfaz limpia y responsiva con Bootstrap 5
-✅ Agregar nuevas tareas
-✅ Eliminar tareas existentes
-✅ API REST integrada (/todos)
+✅ Simulación de registro de usuarios (uso de forms)
+✅ Simulación de login de usuarios (uso de forms)
+✅ API REST integrada (/register)
 ✅ Código modular y mantenible
 
 ## 🔧 Instalación del App
@@ -65,30 +66,14 @@ Abre tu navegador y ve a http://localhost:5000
 
 ## 📡 Endpoints de la API
 
-### GET /todos
+### GET /register
 
-Retorna la lista de tareas en formato JSON.
+Presenta la página web que contiene el formulario para registro de usuario.
 
-### POST /todos
+![Register Form](image1.png)
 
-Agrega una nueva tarea. Cuerpo esperado:
+### POST /register
 
-```plaintext
-{ "todo": "Nueva tarea" }
-```
+Procesa la entrada de un formulario. Resultado esperado:
 
-### DELETE /todos
-
-Elimina una tarea. Cuerpo esperado:
-
-```plaintext
-{ "todo": "Tarea a eliminar" }
-```
-
-### PUT /todos
-
-Actualiza una tarea. Cuerpo esperado:
-
-```plaintext
-{ "old": "Tarea anterior", "new": "Tarea nueva" }
-```
+![Valid Entry Form](image2.png)
