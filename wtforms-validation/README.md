@@ -65,7 +65,7 @@ Abre tu navegador y ve a http://localhost:5000
 
 Presenta la página web que contiene el formulario para login. Los elementos de interacción (cajas de texto y botones) son definidos en el código de Back-end (app.py).
 
-![Login Form](image1.png)
+![Login Form](image.png)
 
 ### POST /login
 
