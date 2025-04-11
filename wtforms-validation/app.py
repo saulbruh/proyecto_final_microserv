@@ -8,11 +8,16 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = "mi_clave_secreta"
 
 class LoginForm(FlaskForm):
-    username = StringField("Nombre de Usuario",
-        validators=[DataRequired(), Length(min=3)])
-    password = PasswordField("Contraseña",
-        validators=[DataRequired()])
-    submit = SubmitField("Iniciar Sesión")
+    username = StringField("Username", # definir input box para el username
+        validators=[DataRequired(), Length(min=3)],
+        render_kw={"placeholder": "Your email"})
+    
+    password = PasswordField("Password", # definir input box para el password
+        validators=[DataRequired()],
+        render_kw={"placeholder": "Your password"})
+    
+    submit = SubmitField("Login",  # definir el botón de submit
+        render_kw={"class": "btn btn-primary"}) # aplicar clases de CSS
 
 
 @app.route("/", methods=["GET"])
@@ -25,7 +30,8 @@ def login():
     form = LoginForm() # Definir las reglas de validación
 
     if form.validate_on_submit(): # Validar los datos entrados contra las reglas
-        return f"Usuario: {form.username.data}"
+        message = f"Usuario: {form.username.data}"
+        return render_template("home.html", message=message)
     
     return render_template("index.html.jinja2", form=form)
 

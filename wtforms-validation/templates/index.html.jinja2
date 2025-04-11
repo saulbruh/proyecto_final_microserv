@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %}
 <div>
-  <h1>Inicio de Sesión</h1>
-  <form method="POST" class="process-form">
+  <h1 class="title">Login Form Validation</h1>
+  <form method="POST" action="/login" class="process-form">
     {{ form.hidden_tag() }} 
 
     {{ form.username.label }} 
@@ -13,13 +13,16 @@
     {% endfor %} 
     
     {{ form.password.label }} 
+
     {{ form.password }} 
 
     {% for error in form.password.errors %}
       <p style="color: red">{{ error }}</p>
     {% endfor %} 
-    
-    {{ form.submit }}
+
+    <br />
+
+    {{ form.submit(class_="btn btn-primary") }}
   </form>
 </div>
 
