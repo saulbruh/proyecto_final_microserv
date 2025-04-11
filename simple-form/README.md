@@ -76,4 +76,4 @@ Presenta la página web que contiene el formulario para registro de usuario.
 
 Procesa la entrada de un formulario. Resultado esperado:
 
-![Valid Entry Form](image2.png)
+![Home Page](image2.png)
