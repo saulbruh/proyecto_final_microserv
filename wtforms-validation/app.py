@@ -17,7 +17,7 @@ class LoginForm(FlaskForm):
 
 @app.route("/", methods=["GET"])
 def index():
-    login()
+    return login()
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -27,7 +27,7 @@ def login():
     if form.validate_on_submit(): # Validar los datos entrados contra las reglas
         return f"Usuario: {form.username.data}"
     
-    return render_template("index.html", form=form)
+    return render_template("index.html.jinja2", form=form)
 
 if __name__ == "__main__":
     app.run(debug=True)
