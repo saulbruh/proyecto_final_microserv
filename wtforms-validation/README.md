@@ -1,6 +1,8 @@
-# REGISTER App
+# Login Form App
 
-Una aplicación web para gestionar tareas, construida con **Flask**, **Jinja2** y **Bootstrap 5**. Incluye una REST API integrada y una interfaz web responsiva que permite entrar y validar un registro de usuario.
+Una aplicación web para Login, construida con **Flask**, **WTForms**, **Jinja2** y **Bootstrap 5**. Incluye una REST API integrada y una interfaz web responsiva que permite entrar y validar el login de un usuario.
+
+Las reglas de validación de los datos para el **Username** y el **Password** se define el código del servidor **app.py** utilizando la librería **WTForms**.
 
 ![Register Form](image.png)
 
