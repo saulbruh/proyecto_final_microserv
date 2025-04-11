@@ -17,3 +17,56 @@ Los controles de entrada de datos y las reglas de validación del **Username** y
 - HTML5, CSS3, JavaScript (mínimo)
 
 ---
+
+## 📁 Estructura del Proyecto
+
+```plaintext
+simple-form/
+│
+├── static/
+│   └── css/
+│       └── styles.css         # Estilos personalizados
+│
+├── templates/
+│   ├── base.html              # Layout principal
+│   ├── home.html              # Página que se presenta luego de validar la entrada del usuario.
+│   └── index.html             # Página principal con formulario para login.
+│
+├── app.py                     # App principal con vistas y lógica de frontend
+└── requirements.txt           # Dependencias del proyecto
+```
+
+## 🔧 Instalación del App
+
+### Clona el repositorio:
+
+```plaintext
+git clone https://github.com/tu-usuario/comp2052.git
+cd simple-form
+```
+
+### Instala las dependencias:
+
+```plaintext
+pip install -r requirements.txt
+```
+
+### Ejecuta la aplicación:
+
+```plaintext
+python app.py
+```
+
+Abre tu navegador y ve a http://localhost:5000
+
+## 📡 Endpoints de la API
+
+### GET /login
+
+Presenta la página web que contiene el formulario para login. Los elementos de interacción (cajas de texto y botones) son definidos en el código de Back-end (app.py).
+
+![Login Form](image1.png)
+
+### POST /login
+
+Procesa la entrada del formulario de login.
