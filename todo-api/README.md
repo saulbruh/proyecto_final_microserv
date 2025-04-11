@@ -29,7 +29,6 @@ todo_app/
 │   └── index.html             # Página principal con formulario
 │
 ├── app.py                     # App principal con vistas y lógica de frontend
-├── api.py                     # (Opcional) Servicio REST separado
 └── requirements.txt           # Dependencias del proyecto
 ```
 
