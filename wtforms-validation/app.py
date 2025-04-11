@@ -9,9 +9,9 @@ app.config["SECRET_KEY"] = "mi_clave_secreta"
 
 class LoginForm(FlaskForm):
     username = StringField("Nombre de Usuario",
-    validators=[DataRequired(), Length(min=3)])
+        validators=[DataRequired(), Length(min=3)])
     password = PasswordField("Contraseña",
-    validators=[DataRequired()])
+        validators=[DataRequired()])
     submit = SubmitField("Iniciar Sesión")
 
 
@@ -21,7 +21,9 @@ def index():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+
     form = LoginForm() # Definir las reglas de validación
+
     if form.validate_on_submit(): # Validar los datos entrados contra las reglas
         return f"Usuario: {form.username.data}"
     
