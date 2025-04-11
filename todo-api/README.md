@@ -46,7 +46,7 @@ todo-api/
 
 ```plaintext
 git clone https://github.com/tu-usuario/comp2052.git
-cd todo-app
+cd todo-api
 ```
 
 ### Instala las dependencias:

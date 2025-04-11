@@ -47,7 +47,7 @@ simple-form/
 
 ```plaintext
 git clone https://github.com/tu-usuario/comp2052.git
-cd todo-app
+cd simple-form
 ```
 
 ### Instala las dependencias:
