@@ -33,7 +33,8 @@ def login(username):
     if user:
         login_user(user)
         return f"Bienvenido {current_user.username}!"
-    return "Usuario no encontrado", 404
+    else:
+        return "Usuario no encontrado", 404
 
 @app.route("/logout")
 @login_required
@@ -44,7 +45,7 @@ def logout():
 @app.route("/dashboard")
 @login_required
 def dashboard():
-    return f"Hola, {current_user.username}! Bienvenido a tu panel."
+    return f"Hola, {current_user.username}! Bienvenido a tu Home Page."
 
 if __name__ == "__main__":
     app.run(debug=True)
