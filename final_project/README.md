@@ -210,14 +210,18 @@ Puedes utilizar este proyecto de Gestión de Cursos en Línea como base para des
 
 - Portada indicando:
   En el centro, al inicio de la página:
+
   - UIPR - Recinto de Arecibo
   - Programa de Ciencias de Computadoras
-    En el centro de la página y de mayor tamaño:
+
+  En el centro de la página y de mayor tamaño:
+
   - nombre del proyecto
   - nombre del curso
     En la parte de abajo, y centralizado:
   - nombre cada uno de los integrantes del grupo con su número de indentificación
     Ejemplo: John Doe (R000123456)
+
 - En el contenido debe incluir:
   - Capturas o imágenes de todas las pantallas (interfaces) requeridas para evidenciar que su proyecto es completamente funcional. Debe incluir una descripción de forma coherente y entendible que explique cada pantalla.
   - Nombres de los archivos de pruebas y copia del código para todos los end-points del CRUD principal del proyecto. Debe incluir una descripción breve de que hace cada archivo, incluyendo; si requiere enviarse algún valor, y si retorna algún valor. Puede ser en forma de tabla (nombre del archivo, valores enviados, valores esperados)
