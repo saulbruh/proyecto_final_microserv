@@ -218,7 +218,9 @@ Puedes utilizar este proyecto de Gestión de Cursos en Línea como base para des
 
   - nombre del proyecto
   - nombre del curso
-    En la parte de abajo, y centralizado:
+
+  En la parte de abajo, y centralizado:
+
   - nombre cada uno de los integrantes del grupo con su número de indentificación
     Ejemplo: John Doe (R000123456)
 
