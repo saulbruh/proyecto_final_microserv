@@ -188,4 +188,4 @@ Puedes utilizar este proyecto de Gestión de Cursos en Línea como base para des
 
 ## 🧠 Licencia
 
-Este proyecto es de uso académico y puede ser reutilizado con fines educativos. El creador de este proyecto y la lista de proyectos es el profesor Javier A. Dastas de Ciencias de Computadoras.
+Este proyecto es de uso académico y puede ser reutilizado con fines educativos. Este proyecto y la lista son creaciones originales del profesor Javier A. Dastas de Ciencias de Computadoras.
