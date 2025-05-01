@@ -2,7 +2,7 @@
 
 Este proyecto permite gestionar cursos en línea donde **profesores** pueden crear cursos, y **estudiantes** pueden visualizarlos. Además, los **administradores** pueden gestionar usuarios y roles. Es el Proyecto 1 dentro de una colección de 11 proyectos desarrollados como práctica final para los estudiantes.
 
-A continuación, capturas de algunas pantallas del front-end:
+A continuación, capturas de algunas de la interfaces del front-end del proyecto:
 
 <figure class="image">
    <img src="images/image-01.png" alt="Login Form">
