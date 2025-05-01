@@ -7,7 +7,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-# Modelo de roles (Admin, Profesor, Estudiante, etc.)
+# Modelo de roles (Admin, Professor, Student, etc.)
 class Role(db.Model):
     __tablename__ = 'role'
     

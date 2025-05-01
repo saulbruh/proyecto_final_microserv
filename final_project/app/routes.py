@@ -77,7 +77,7 @@ def editar_curso(id):
     curso = Curso.query.get_or_404(id)
 
     # Validación de permisos
-    if current_user.role.name not in ['Admin', 'Profesor'] or (
+    if current_user.role.name not in ['Admin', 'Professor'] or (
         curso.profesor_id != current_user.id and current_user.role.name != 'Admin'):
         flash('You do not have permission to edit this course.')  # 🔁 Traducido
         return redirect(url_for('main.dashboard'))
@@ -101,7 +101,7 @@ def eliminar_curso(id):
     """
     curso = Curso.query.get_or_404(id)
 
-    if current_user.role.name not in ['Admin', 'Profesor'] or (
+    if current_user.role.name not in ['Admin', 'Professor'] or (
         curso.profesor_id != current_user.id and current_user.role.name != 'Admin'):
         flash('You do not have permission to delete this course.')  # 🔁 Traducido
         return redirect(url_for('main.dashboard'))
