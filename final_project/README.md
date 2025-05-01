@@ -87,7 +87,7 @@ Cada estudiante (o grupo) realizará uno de los siguientes proyectos como práct
 
 - Python 3.8 o superior
 - MySQL Server corriendo localmente (`localhost:3306`)
-- Un entorno virtual activo (recomendado)
+- Un entorno virtual activo (opcional, pero recomendado)
 
 ---
 
@@ -99,6 +99,13 @@ Cada estudiante (o grupo) realizará uno de los siguientes proyectos como práct
    git clone https://github.com/javierdastas/comp2052.git
    cd comp2052/final_project
    ```
+
+   > **IMPORTANTE** : Para el trabajo grupal es requerido que uno de los integrantes del grupo cree una copia del repositorio del MASTER del curso (profesor). Este integrante será el líder del grupo y los demás miembros del grupo deben clonar el proyecto del repositorio del líder.
+
+   > Luego de que los otros integrantes hayan clonado la copia del integrante líder, el líder debe asignar a los otros integrantes como colaboradores del repositorio del líder.
+
+   - Ver el siguiente enlace para mayor información:
+     ### [**⏿ Inviting a collaborator to a personal repository ⏿**](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
 
 2. **Crear entorno virtual y activarlo**
 
@@ -279,4 +286,4 @@ Puedes utilizar este proyecto de Gestión de Cursos en Línea como base para des
 
 ## 🧠 Licencia
 
-Este proyecto es de uso académico y puede ser reutilizado con fines educativos. Este proyecto y la lista son creaciones originales del profesor Javier A. Dastas de Ciencias de Computadoras.
+Este proyecto es de uso académico y puede ser reutilizado con fines educativos indicando las referencias correspondientes del Proyecto. Este proyecto y la lista de proyectos son creaciones originales del profesor Javier A. Dastas de Ciencias de Computadoras.
