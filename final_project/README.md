@@ -136,7 +136,7 @@ Cada estudiante (o grupo) realizará uno de los siguientes proyectos como práct
    mysql -u root -p < database_schema/01_cursos.sql
    ```
 
-   > Puedes utilizar Visual Studio Code u otra interface que se conecte a tu DBMS (servidor) de MySQL y correr el archivo correspondiente al proyecto:
+   > Puedes utilizar Visual Studio Code u otra herramienta gráfica que se conecte a tu DBMS (servidor) de MySQL y correr el archivo correspondiente al proyecto para crear tu base de datos:
 
    ```bash
    01_cursos.sql
