@@ -186,6 +186,76 @@ Puedes utilizar este proyecto de Gestión de Cursos en Línea como base para des
 | `templates/dashboard.html`           | Cambiar los títulos o enlaces para que hagan referencia al nombre de tu entidad principal y proyecto.                                                                                                                     |
 | `README.md`                          | Si haces un fork o copia del proyecto, personaliza este archivo con el nombre de tu proyecto final y la documentación correspondiente.                                                                                    |
 
+## ✅ Archivos clave para el estudiante
+
+- app/models.py: Modelos SQLAlchemy
+- app/forms.py: Formularios personalizados
+- app/routes.py: Lógica del CRUD principal
+- templates/\*.html: Vistas HTML para CRUD y autenticación
+- database_schema/XX_nombre.sql: Esquema SQL de cada proyecto final
+
+## 🗂️ Entregables - Documento en formato en PDF (proyecto.pdf)
+
+> **IMPORTANTE**: El documento en PDF a entregar tiene que incluir las siguientes partes:
+
+- Portada indicando:
+  En el centro, al inicio de la página:
+  - UIPR - Recinto de Arecibo
+  - Programa de Ciencias de Computadoras
+    En el centro de la página y de mayor tamaño:
+  - nombre del proyecto
+  - nombre del curso
+    En la parte de abajo, y centralizado:
+  - nombre cada uno de los integrantes del grupo con su número de indentificación
+    Ejemplo: John Doe (R000123456)
+- En el contenido debe incluir:
+  - Capturas o imágenes de todas las pantallas (interfaces) requeridas para evidenciar que su proyecto es completamente funcional. Debe incluir una descripción de forma coherente y entendible que explique cada pantalla.
+  - Nombres de los archivos de pruebas y copia del código para todos los end-points del CRUD principal del proyecto. Debe incluir una descripción breve de que hace cada archivo, incluyendo; si requiere enviarse algún valor, y si retorna algún valor. Puede ser en forma de tabla (nombre del archivo, valores enviados, valores esperados)
+  - Pruebas de todos los end-points del CRUD principal del proyecto, capturas de pantallas de cada prueba.
+  - Lista de direcciones del repositorio o carpeta en Github para cada integrante del grupo. Puede realizar esta parte en forma de tabla (nombre del integrante, dirección en github).
+
+> Cada sección del documento esté identificada con un título que corresponda a la sección presentada en el documento.
+
+## 🗂️ Estructura Final del Proyecto a Entregar en su Github
+
+```text
+📦 raiz_del_proyecto/
+├── run.py                 # Punto de entrada de la app Flask
+├── config.py              # Configuración global (clave secreta, DB URI)
+├── requirements.txt       # Dependencias del proyecto
+├── create_demo_users.py   # Script para crear usuarios iniciales (admin, profesor, estudiante)
+├── README.md              # Documentación del proyecto
+├── proyecto.pdf           # Documentación del proyecto requerida para entregar en el curso.
+|
+├── 📁 pruebas/            # Incluir todos los archivos necesarios para probar el CRUD principal
+│   ├── create.rest             # Test file to Create a Row
+│   ├── read.rest               # Test file to Read Rows
+│   ├── update.rest             # Test file to Update a Row
+│   ├── delete.rest             # Test file to Delete a Row
+|
+├── 📁 app/
+│   ├── __init__.py             # Inicializa Flask, SQLAlchemy y Blueprints
+│   ├── models.py               # Modelos de base de datos (User, Role, Curso)
+│   ├── forms.py                # Formularios Flask-WTF (registro, login, curso, contraseña)
+│   ├── routes.py               # Rutas protegidas (dashboard, cursos, cambiar contraseña)
+│   ├── auth_routes.py          # Rutas públicas (login, registro, logout)
+|   |
+│   ├── 📁 templates/
+│   │   ├── layout.html           # Plantilla base para todas las vistas
+│   │   ├── index.html            # Página de bienvenida pública
+│   │   ├── login.html            # Formulario de inicio de sesión
+│   │   ├── register.html         # Formulario de registro con selector de rol
+│   │   ├── dashboard.html        # Vista principal del usuario logueado
+│   │   ├── curso_form.html       # Formulario para crear/editar cursos
+│   │   ├── cursos.html           # Lista de cursos creados
+│   │   ├── usuarios.html         # Vista de administración de usuarios (solo admin)
+│   │   └── cambiar_password.html # Formulario para cambiar contraseña
+|   |
+│   └── 📁 static/
+│       └── 📁 css/
+│           └── styles.css              # (Opcional) Estilos personalizados
+```
+
 ## 🧠 Licencia
 
 Este proyecto es de uso académico y puede ser reutilizado con fines educativos. Este proyecto y la lista son creaciones originales del profesor Javier A. Dastas de Ciencias de Computadoras.
