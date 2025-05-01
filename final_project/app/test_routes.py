@@ -4,6 +4,14 @@ from app.models import db, Curso
 # Blueprint solo con endpoints de prueba para cursos
 main = Blueprint('main', __name__)
 
+@main.route('/') # Ambas rutas llevan al mismo lugar
+@main.route('/dashboard')
+def index():
+    """
+    Página de inicio pública (home).
+    """
+    return '<h1>Corriendo en Modo de Prueba.</h1>'
+
 @main.route('/cursos', methods=['GET'])
 def listar_cursos():
     """

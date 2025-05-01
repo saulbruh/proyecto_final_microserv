@@ -179,6 +179,7 @@ Puedes utilizar este proyecto de Gestión de Cursos en Línea como base para des
 | `app/models.py`                      | Renombrar el modelo Curso al nuevo recurso principal (e.g. Receta, Articulo). Cambiar atributos de la entidad principal según el nuevo CRUD.                                                                              |
 | `app/forms.py`                       | Modificar CursoForm para reflejar los datos o campos de tu entidad principal. Especifica el tipo de control de entrada según corresponda al dato de tu entidad principal.                                                 |
 | `app/routes.py`                      | Cambiar las rutas relacionadas con cursos (/cursos, /editar, /eliminar) al nuevo recurso. Asegúrate de actualizar las consultas y las plantillas usadas.                                                                  |
+| `app/test_routes.py`                 | Rutas (end-points) para pruebas relacionadas con cursos (/cursos). Asegúrate de actualizar las consultas y las plantillas usadas para realizar las pruebas de tu proyecto.                                                |
 | `templates/curso_form.html`          | Renombrar el archivo (ej. receta_form.html) y cambia los datos (cajas de texto, etc.) o campos que se muestran en el formulario.                                                                                          |
 | `templates/cursos.html`              | Renombrar el archivo (ej. recetas.html) y actualiza la tabla para mostrar los datos específicos de tu entidad principal (tabla).                                                                                          |
 | `database_schema/XX_tu_proyecto.sql` | Verifica que el archivo .sql correspondiente a tu proyecto esté actualizado según los datos que solicitarás para tu proyecto. Puedes editarlo o usarlo como guía para crear la base de datos y las tablas de tu proyecto. |
@@ -191,8 +192,10 @@ Puedes utilizar este proyecto de Gestión de Cursos en Línea como base para des
 - app/models.py: Modelos SQLAlchemy
 - app/forms.py: Formularios personalizados
 - app/routes.py: Lógica del CRUD principal
+- app/test_routes.py: Lógica del CRUD para pruebas
 - templates/\*.html: Vistas HTML para CRUD y autenticación
 - database_schema/XX_nombre.sql: Esquema SQL de cada proyecto final
+- pruebas/\*.rest: Pruebas para CRUD de las rutas en `test_routes.py`
 
 ## 🗂️ Entregables - Documento en formato en PDF (proyecto.pdf)
 
@@ -224,6 +227,7 @@ Puedes utilizar este proyecto de Gestión de Cursos en Línea como base para des
     from app.routes import main
     # from app.test_routes import main
     ```
+    > **IMPORTANTE** : Cada vez que cambies el código debe reiniciar el proyecto de Flask.
   - Para cada integrante del grupo el documento debe incluir las direcciones del repositorio o carpeta en Github. Puede realizar esta parte en forma de tabla (nombre del integrante, dirección en github) para cada integrante.
 
 > **IMPORTANTE** :
