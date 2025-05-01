@@ -96,8 +96,8 @@ Cada estudiante (o grupo) realizará uno de los siguientes proyectos como práct
 1. **Clonar el repositorio**
 
    ```bash
-   git clone <URL_DEL_REPO>
-   cd <nombre-del-proyecto>
+   git clone https://github.com/javierdastas/comp2052.git
+   cd comp2052/final_project
    ```
 
 2. **Crear entorno virtual y activarlo**
