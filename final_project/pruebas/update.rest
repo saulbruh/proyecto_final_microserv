@@ -1,11 +1,10 @@
-### 📝 Editar un curso (GET + POST)
-# Primero obtén el formulario (opcional si solo pruebas vía REST)
-GET http://localhost:5000/cursos/1/editar
-Cookie: session=<COPIA_TU_COOKIE_FLASK_SESSION_AQUÍ>
+### Editar un curso (POST)
 
 # Simular POST con nuevos datos del curso
-POST http://localhost:5000/cursos/1/editar
-Content-Type: application/x-www-form-urlencoded
-Cookie: session=<COPIA_TU_COOKIE_FLASK_SESSION_AQUÍ>
+PUT http://localhost:5000/cursos/4
+Content-Type: application/json
 
-titulo=Curso actualizado&descripcion=Nueva descripción actualizada
+{
+  "titulo": "Curso actualizado",
+  "descripcion": "Nueva descripción actualizada"
+}

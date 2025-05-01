@@ -1,3 +1,0 @@
-### 📥 Obtener dashboard y cursos del usuario autenticado (GET)
-GET http://localhost:5000/dashboard
-Cookie: session=<COPIA_TU_COOKIE_FLASK_SESSION_AQUÍ>

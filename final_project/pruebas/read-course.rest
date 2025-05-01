@@ -1,3 +1,0 @@
-### 📄 Obtener curso por ID (GET)
-GET http://localhost:5000/api/cursos/1
-Content-Type: application/json

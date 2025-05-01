@@ -5,7 +5,8 @@ content %}
     <h3>Course Management</h3>
   </div>
   <div class="col text-end">
-    {% if current_user.role.name != 'Estudiante' %}
+    <!-- Change the next line for your project -->
+    {% if current_user.role.name != 'Student' %}
     <a class="btn btn-primary mb-3 me-2" href="{{ url_for('main.cursos') }}">
       <i class="bi bi-plus"></i> New
     </a>
@@ -62,7 +63,8 @@ content %}
   </tbody>
 </table>
 
-{% if current_user.role.name == 'Estudiante' %}
+<!-- Change the next line for your project -->
+{% if current_user.role.name == 'Student' %}
 <p class="text-center pe-3 mt-0 text-body-tertiary fw-lighter fst-italic">
   You do not have permission to create, update or delete courses.
 </p>

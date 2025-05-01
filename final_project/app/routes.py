@@ -41,7 +41,7 @@ def dashboard():
     """
     Panel principal del usuario. Muestra los cursos si no es estudiante.
     """
-    if current_user.role.name == 'Estudiante':
+    if current_user.role.name == 'Student': # Change this for your project
         cursos = Curso.query.all()
     else:
         cursos = Curso.query.filter_by(profesor_id=current_user.id).all()

@@ -212,9 +212,24 @@ Puedes utilizar este proyecto de Gestión de Cursos en Línea como base para des
   - Capturas o imágenes de todas las pantallas (interfaces) requeridas para evidenciar que su proyecto es completamente funcional. Debe incluir una descripción de forma coherente y entendible que explique cada pantalla.
   - Nombres de los archivos de pruebas y copia del código para todos los end-points del CRUD principal del proyecto. Debe incluir una descripción breve de que hace cada archivo, incluyendo; si requiere enviarse algún valor, y si retorna algún valor. Puede ser en forma de tabla (nombre del archivo, valores enviados, valores esperados)
   - Pruebas de todos los end-points del CRUD principal del proyecto, capturas de pantallas de cada prueba.
-  - Lista de direcciones del repositorio o carpeta en Github para cada integrante del grupo. Puede realizar esta parte en forma de tabla (nombre del integrante, dirección en github).
+    > **IMPORTANTE** : Para realizar las pruebas debes:
+    - Modificar el archivo `test_routes.py` al igual que los archivos de pruebas en la carpeta (folder) `pruebas` de acuerdo a tu proyecto.
+    - Además debe cambiar las líneas 17 y 18 del archivo `__init__.py` a:
+    ```bash
+    # from app.routes import main
+    from app.test_routes import main
+    ```
+    > **IMPORTANTE** : Luego de finalizar las pruebas recuerda volver otra vez el código del archivo `__init__.py` a:
+    ```bash
+    from app.routes import main
+    # from app.test_routes import main
+    ```
+  - Para cada integrante del grupo el documento debe incluir las direcciones del repositorio o carpeta en Github. Puede realizar esta parte en forma de tabla (nombre del integrante, dirección en github) para cada integrante.
 
-> Cada sección del documento esté identificada con un título que corresponda a la sección presentada en el documento.
+> **IMPORTANTE** :
+
+- Cada sección del documento esté identificada con un título que corresponda a la sección presentada en el documento.
+- Todos los integrantes o miembros de grupo de forma individual debe entregar una copia del documento final y tener su propio repositorio en GitHub con copia del código final.
 
 ## 🗂️ Estructura Final del Proyecto a Entregar en su Github
 
@@ -230,6 +245,7 @@ Puedes utilizar este proyecto de Gestión de Cursos en Línea como base para des
 ├── 📁 pruebas/            # Incluir todos los archivos necesarios para probar el CRUD principal
 │   ├── create.rest             # Test file to Create a Row
 │   ├── read.rest               # Test file to Read Rows
+│   ├── read-a-row.rest         # Test file to Read only one Row
 │   ├── update.rest             # Test file to Update a Row
 │   ├── delete.rest             # Test file to Delete a Row
 |
@@ -238,6 +254,7 @@ Puedes utilizar este proyecto de Gestión de Cursos en Línea como base para des
 │   ├── models.py               # Modelos de base de datos (User, Role, Curso)
 │   ├── forms.py                # Formularios Flask-WTF (registro, login, curso, contraseña)
 │   ├── routes.py               # Rutas protegidas (dashboard, cursos, cambiar contraseña)
+│   ├── test_routes.py          # Rutas o end-points para pruebas (cursos)
 │   ├── auth_routes.py          # Rutas públicas (login, registro, logout)
 |   |
 │   ├── 📁 templates/
