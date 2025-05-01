@@ -227,7 +227,7 @@ Puedes utilizar este proyecto de Gestión de Cursos en Línea como base para des
     from app.routes import main
     # from app.test_routes import main
     ```
-    > **IMPORTANTE** : Cada vez que cambies el código debe reiniciar el proyecto de Flask.
+    > **IMPORTANTE** : Cada vez que cambies el código del archivo `__init__.py` debes reiniciar el proyecto de Flask.
   - Para cada integrante del grupo el documento debe incluir las direcciones del repositorio o carpeta en Github. Puede realizar esta parte en forma de tabla (nombre del integrante, dirección en github) para cada integrante.
 
 > **IMPORTANTE** :
