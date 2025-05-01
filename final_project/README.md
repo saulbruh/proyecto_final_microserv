@@ -232,7 +232,7 @@ Puedes utilizar este proyecto de Gestión de Cursos en Línea como base para des
 
 > **IMPORTANTE** :
 
-- Cada sección del documento esté identificada con un título que corresponda a la sección presentada en el documento.
+- Cada sección en el documento debe estar identificada con un título que corresponda a la sección o información a presentar en el documento.
 - Todos los integrantes o miembros de grupo de forma individual debe entregar una copia del documento final y tener su propio repositorio en GitHub con copia del código final.
 
 ## 🗂️ Estructura Final del Proyecto a Entregar en su Github
