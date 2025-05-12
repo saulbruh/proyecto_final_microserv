@@ -17,7 +17,7 @@ class RegisterForm(FlaskForm):
     
     role = SelectField(
         'Role',
-        choices=[('Student', 'Student'), ('Professor', 'Professor')],
+        choices=[('Usuario', 'Usuario'), ('Chef', 'Chef')],
         validators=[DataRequired()]
     )
 
@@ -31,7 +31,7 @@ class ChangePasswordForm(FlaskForm):
     submit = SubmitField('Update Password')
 
 # Formulario para crear o editar un curso
-class CursoForm(FlaskForm):
-    titulo = StringField('Course title', validators=[DataRequired()])
+class RecetaForm(FlaskForm):
+    titulo = StringField('Recipe title', validators=[DataRequired()])
     descripcion = TextAreaField('Description', validators=[DataRequired()])
     submit = SubmitField('Save')

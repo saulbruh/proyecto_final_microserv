@@ -8,9 +8,6 @@ auth = Blueprint('auth', __name__)
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
-    """
-    Inicia sesión de un usuario existente si las credenciales son válidas.
-    """
     form = LoginForm()
 
     # Procesamiento del formulario si es enviado correctamente
@@ -29,10 +26,7 @@ def login():
     return render_template('login.html', form=form)
 
 @auth.route('/register', methods=['GET', 'POST'])
-def register():
-    """
-    Registra un nuevo usuario y lo asocia por defecto al rol "Student".
-    """    
+def register(): 
     form = RegisterForm()
     
     # Procesa el formulario si fue enviado correctamente
