@@ -1,10 +1,15 @@
-### Crear un nuevo curso (POST)
+### Crear una nueva receta (POST)
 
-POST http://localhost:5000/cursos
+POST http://localhost:5000/recetas
 Content-Type: application/json
 
 {
-  "titulo": "Flask Avanzado",
-  "descripcion": "Curso intensivo de desarrollo con Flask",
-  "profesor_id": 1
+  "nombre": "Tarta de Queso",
+  "ingredientes": "Queso crema, azúcar, huevos, base de galleta",
+  "instrucciones": "Mezclar los ingredientes, verter en un molde y hornear por 45 minutos.",
+  "tiempo_preparacion": 60,
+  "porciones": 8,
+  "imagen_url": "http://example.com/cheesecake.jpg",
+  "categoria": "Postres",
+  "usuario_id": 1
 }

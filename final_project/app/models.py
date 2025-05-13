@@ -28,7 +28,7 @@ class User(UserMixin, db.Model):
     role_id = db.Column(db.Integer, db.ForeignKey('role.id'), nullable=False)
 
     # Relación con cursos (si es chef)
-    cursos = db.relationship('Receta', backref='chef', lazy=True)
+    cursos = db.relationship('Receta', backref='usuario', lazy=True)
 
     def set_password(self, password: str):
         self.password_hash = generate_password_hash(password)

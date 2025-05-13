@@ -1,0 +1,52 @@
+{% extends "layout.html" %} {% block title %}{{ editar and "Edit Recipe" or "New Recipe" }}{% endblock %} {% block content %}
+<h2 class="mb-4">{{ editar and "Edit Recipe" or "New Recipe" }}</h2>
+
+<form method="POST" novalidate>
+  {{ form.hidden_tag() }}
+
+  <!-- Recipe Name -->
+  <div class="mb-3">
+    {{ form.nombre.label(class="form-label") }}
+    {{ form.nombre(class="form-control", placeholder="Enter recipe name") }}
+  </div>
+
+  <!-- Ingredients -->
+  <div class="mb-3">
+    {{ form.ingredientes.label(class="form-label") }}
+    {{ form.ingredientes(class="form-control", placeholder="List ingredients") }}
+  </div>
+
+  <!-- Instructions -->
+  <div class="mb-3">
+    {{ form.instrucciones.label(class="form-label") }}
+    {{ form.instrucciones(class="form-control", placeholder="Write instructions") }}
+  </div>
+
+  <!-- Preparation Time -->
+  <div class="mb-3">
+    {{ form.tiempo_preparacion.label(class="form-label") }}
+    {{ form.tiempo_preparacion(class="form-control", placeholder="Time in minutes") }}
+  </div>
+
+  <!-- Servings -->
+  <div class="mb-3">
+    {{ form.porciones.label(class="form-label") }}
+    {{ form.porciones(class="form-control", placeholder="Number of servings") }}
+  </div>
+
+  <!-- Image URL -->
+  <div class="mb-3">
+    {{ form.imagen_url.label(class="form-label") }}
+    {{ form.imagen_url(class="form-control", placeholder="Enter image URL") }}
+  </div>
+
+  <!-- Category -->
+  <div class="mb-3">
+    {{ form.categoria.label(class="form-label") }}
+    {{ form.categoria(class="form-control", placeholder="Enter category") }}
+  </div>
+
+  <!-- Submit Button -->
+  <div class="mb-3">{{ form.submit(class="btn btn-primary") }}</div>
+</form>
+{% endblock %}

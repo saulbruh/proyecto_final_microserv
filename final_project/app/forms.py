@@ -30,8 +30,13 @@ class ChangePasswordForm(FlaskForm):
     confirm_password = PasswordField('Confirm new password', validators=[DataRequired(), EqualTo('new_password')])
     submit = SubmitField('Update Password')
 
-# Formulario para crear o editar un curso
+# Formulario para crear o editar una receta
 class RecetaForm(FlaskForm):
-    titulo = StringField('Recipe title', validators=[DataRequired()])
-    descripcion = TextAreaField('Description', validators=[DataRequired()])
-    submit = SubmitField('Save')
+    nombre = StringField('Nombre', validators=[DataRequired()])
+    ingredientes = TextAreaField('Ingredientes', validators=[DataRequired()])
+    instrucciones = TextAreaField('Instrucciones', validators=[DataRequired()])
+    tiempo_preparacion = StringField('Tiempo de preparación (min)', validators=[DataRequired()])
+    porciones = StringField('Porciones', validators=[DataRequired()])
+    imagen_url = StringField('URL de imagen')
+    categoria = StringField('Categoría')
+    submit = SubmitField('Guardar')

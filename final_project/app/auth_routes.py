@@ -32,7 +32,7 @@ def register():
     # Procesa el formulario si fue enviado correctamente
     if form.validate_on_submit():
         # Buscar el rol por nombre seleccionado
-        role = Role.query.filter_by(name=form.role.data).first() # Puedes renombrar esto a 'Student' si cambias toda la app a inglés
+        role = Role.query.filter_by(name=form.role.data).first()
 
         # Crea el usuario con datos del formulario
         user = User(
