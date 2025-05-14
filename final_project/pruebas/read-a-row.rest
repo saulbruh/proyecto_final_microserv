@@ -1,4 +1,7 @@
-### Obtener curso por ID (GET)
+### Obtener receta por ID (GET)
+# Simular GET para obtener una receta específica por su ID
+# Se asume que la receta con ID 3 existe en la base de datos.
+# Esta solicitud devolverá la receta con ID 3 en formato JSON.
 
-GET http://localhost:5000/cursos/1
+GET http://localhost:5000/recetas/3
 Content-Type: application/json

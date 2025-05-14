@@ -1,4 +1,7 @@
-### Obtener todos los cursos (GET)
+### Obtener todas las recetas (GET)
+# Simular GET para obtener todas las recetas
+# Se asume que la base de datos tiene varias recetas almacenadas.
+# Esta solicitud devolverá una lista de todas las recetas en formato JSON.
 
-GET http://localhost:5000/cursos
+GET http://localhost:5000/recetas
 Content-Type: application/json

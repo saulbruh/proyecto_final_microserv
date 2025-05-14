@@ -32,11 +32,11 @@ class ChangePasswordForm(FlaskForm):
 
 # Formulario para crear o editar una receta
 class RecetaForm(FlaskForm):
-    nombre = StringField('Nombre', validators=[DataRequired()])
-    ingredientes = TextAreaField('Ingredientes', validators=[DataRequired()])
-    instrucciones = TextAreaField('Instrucciones', validators=[DataRequired()])
-    tiempo_preparacion = StringField('Tiempo de preparación (min)', validators=[DataRequired()])
-    porciones = StringField('Porciones', validators=[DataRequired()])
-    imagen_url = StringField('URL de imagen')
-    categoria = StringField('Categoría')
-    submit = SubmitField('Guardar')
+    nombre = StringField('Name', validators=[DataRequired()])
+    ingredientes = TextAreaField('Ingredients', validators=[DataRequired()])
+    instrucciones = TextAreaField('Instructions', validators=[DataRequired()])
+    tiempo_preparacion = StringField('Preparation Time (min)', validators=[DataRequired()])
+    porciones = StringField('Servings', validators=[DataRequired()])
+    imagen_url = StringField('Image URL')
+    categoria = StringField('Category')
+    submit = SubmitField('Save')

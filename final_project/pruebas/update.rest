@@ -1,6 +1,9 @@
-### Editar un curso (POST)
+### Editar una receta (POST)
 
-# Simular POST con nuevos datos del curso
+# Simular POST con nuevos datos del la receta
+# En este caso, se actualiza la receta con ID 4
+# Se asume que la receta con ID 4 ya existe en la base de datos
+# y se desea actualizar su información.
 
 PUT http://localhost:5000/recetas/4
 Content-Type: application/json
