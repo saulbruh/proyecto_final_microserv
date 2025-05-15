@@ -5,7 +5,7 @@
 # Se asume que la receta con ID 4 ya existe en la base de datos
 # y se desea actualizar su información.
 
-PUT http://localhost:5000/recetas/4
+PUT http://localhost:5000/recetas/7
 Content-Type: application/json
 
 {

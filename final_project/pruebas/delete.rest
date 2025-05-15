@@ -3,4 +3,4 @@
 # Se asume que la receta con ID 4 existe en la base de datos.
 # Esta solicitud eliminará la receta con ID 4 de la base de datos.
 
-DELETE http://localhost:5000/recetas/4
+DELETE http://localhost:5000/recetas/7

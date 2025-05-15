@@ -32,7 +32,7 @@ def cambiar_password():
 @main.route('/dashboard')
 @login_required
 def dashboard():
-    if current_user.role.name == 'Usuario': # Change this for your project
+    if current_user.role.name == 'Usuario':
         recetas = Receta.query.all()
     else:
         recetas = Receta.query.filter_by(usuario_id=current_user.id).all()
