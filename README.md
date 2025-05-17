@@ -5,17 +5,17 @@ Este proyecto permite gestionar recetas donde **chefs** pueden crear recetas, y 
 A continuación, capturas de algunas de la interfaces del front-end del proyecto:
 
 <figure class="image">
-   <img src="" alt="Login Form">
+   <img src="./final_project/images/login.png" alt="Login Form">
    <figcaption>Login Page</figcaption>
 </figure>
 
 <figure class="image">
-   <img src="" alt="Dashboard">
+   <img src="./final_project/images/recetas.png" alt="Dashboard">
    <figcaption>Home Page / Dashboard</figcaption>
 </figure>
 
 <figure class="image">
-   <img src="" alt="User List">
+   <img src="./final_project/images/usuarios.png" alt="User List">
    <figcaption>Registered Users</figcaption>
 </figure>
 
